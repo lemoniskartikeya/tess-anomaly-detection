@@ -14,12 +14,12 @@ To maximize the statistical power of this check, targets are prioritized from th
 
 | Step | Description | Status |
 |------|-------------|--------|
-| 1. Target Selection | Query MAST for TESS targets with ≥3 sectors of observations, prioritizing CVZ stars | ✅ Complete |
-| 2. Download & Clean | Download SPOC light curves via `lightkurve`, clean (remove NaNs, normalize, sigma-clip, flatten), resample to a fixed-length grid, and cache to disk | ✅ Complete |
-| 3. Baseline Detector | Extract simple statistical features (std, peak-to-peak, roughness, percentiles, skewness, kurtosis) and fit an Isolation Forest as an honest, explainable comparison point | ✅ Complete |
-| 4. VAE-based Detector | Train a Variational Autoencoder to learn "normal" light curve shapes; use reconstruction error as a deeper anomaly signal | 🔧 In progress |
-| 5. Cross-Sector Consistency Check | For each flagged anomaly, check whether the same signature recurs across the star's other sectors | ⏳ Planned |
-| 6. Validation | Injection-recovery testing with synthetic anomalies; cross-reference against known TOI/variable star catalogs | ⏳ Planned |
+| 1. Target Selection | Query MAST for TESS targets with ≥3 sectors of observations, prioritizing CVZ stars |  Complete |
+| 2. Download & Clean | Download SPOC light curves via `lightkurve`, clean (remove NaNs, normalize, sigma-clip, flatten), resample to a fixed-length grid, and cache to disk |  Complete |
+| 3. Baseline Detector | Extract simple statistical features (std, peak-to-peak, roughness, percentiles, skewness, kurtosis) and fit an Isolation Forest as an honest, explainable comparison point |  Complete |
+| 4. VAE-based Detector | Train a Variational Autoencoder to learn "normal" light curve shapes; use reconstruction error as a deeper anomaly signal |  In progress |
+| 5. Cross-Sector Consistency Check | For each flagged anomaly, check whether the same signature recurs across the star's other sectors |  Planned |
+| 6. Validation | Injection-recovery testing with synthetic anomalies; cross-reference against known TOI/variable star catalogs |  Planned |
 
 ## Repository structure
 
