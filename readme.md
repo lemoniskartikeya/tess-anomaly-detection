@@ -2,7 +2,7 @@
 
 Unsupervised detection of astrophysically interesting anomalies in TESS light curves, using cross-sector consistency as the core validation signal to distinguish genuine stellar behavior from instrumental noise.
 
-## Motivation
+## Motivation 
 
 TESS observes hundreds of thousands of stars across overlapping sectors, generating far more data than can be manually inspected. A light curve anomaly (an unusual dip, spike, or pattern) could be a genuine astrophysical event — a transit, flare, or unusual variable star — or it could simply be instrumental noise (a cosmic ray hit, a systematic pipeline artifact).
 
